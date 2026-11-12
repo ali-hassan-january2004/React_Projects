@@ -1,0 +1,14 @@
+.container {
+  width: min(1120px, 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+.section-heading {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 0.75rem;
+}
+
+.section-intro {
+  max-width: 52ch;
+  color: var(--muted);
+}

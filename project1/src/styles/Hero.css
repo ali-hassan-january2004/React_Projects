@@ -1,0 +1,142 @@
+.hero {
+  padding: clamp(3rem, 8vw, 6rem) 0 clamp(4rem, 9vw, 7rem);
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+.hero__text {
+  animation: hero-rise 0.7s ease-out both;
+}
+
+.hero__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.hero__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1faa6b;
+}
+
+.hero__title {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: 800;
+}
+
+.hero__lead {
+  max-width: 46ch;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.hero__button--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero__button--primary:hover {
+  background: var(--accent-dark);
+}
+
+.hero__button--ghost {
+  border-color: var(--ink);
+  background: transparent;
+  color: var(--ink);
+}
+
+.hero__button--ghost:hover {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* ---------- Photo ---------- */
+
+.hero__frame {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 400px);
+  aspect-ratio: 4 / 5;
+}
+
+/* yellow offset shape behind the photo */
+.hero__frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translate(16px, 16px);
+  border-radius: 200px 200px 28px 28px;
+  background: var(--pop);
+}
+
+.hero__photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%; /* keeps your face in frame */
+  border-radius: 200px 200px 28px 28px;
+  border: 4px solid var(--surface);
+  box-shadow: 0 20px 40px rgba(16, 25, 54, 0.18);
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Responsive (keep this last) ---------- */
+
+@media (max-width: 860px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__frame {
+    width: min(100%, 320px);
+    justify-self: start;
+    margin-right: 16px; /* room for the yellow offset shape */
+  }
+}
