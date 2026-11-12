@@ -6,8 +6,8 @@ This project was built as part of my React learning journey (Day 1: JSX, compone
 
 ## Screenshots
 
-![Home page](project1/screenshot/home.png)
-![Skills section](project1/screenshot/skills.png)
+(project1/screenshot/home.png)
+(project1/screenshot/skills.png)
 
 > Rename the files in `project1/screenshot/` to match the names above, or update the paths.
 
