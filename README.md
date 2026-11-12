@@ -1,1 +1,73 @@
-# React_Projects
+# React Projects
+
+A collection of React projects I build while learning, from the basics to advanced topics. Each project lives in its own folder with its own README, so you can open one, run it, and see what it covers.
+
+## Projects
+
+| # | Project | What it covers | Level | Status |
+|---|---------|----------------|-------|--------|
+| 1 | [Personal Portfolio](./project1) | JSX, functional components, fragments, props, click events, Vite + TypeScript | Basic | Done |
+
+More projects will be added to this table as I finish them.
+
+## Learning Path
+
+The plan is to move through React step by step. Topics are added to projects as I learn them.
+
+**Basic**
+- JSX, components and props
+- Events and conditional rendering
+- Lists and keys
+- State with `useState`
+- Forms and controlled inputs
+
+**Intermediate**
+- `useEffect` and fetching data from APIs
+- Component composition and lifting state up
+- React Router and multi-page apps
+- Context API for shared state
+- Custom hooks
+
+**Advanced**
+- Global state management
+- Performance optimization (`memo`, `useMemo`, `useCallback`)
+- Authentication and protected routes
+- Testing components
+- Deployment
+
+## Getting Started
+
+Each project is a separate app. To run one:
+
+```bash
+git clone https://github.com/ali-hassan-january2004/React_Projects.git
+cd React_Projects/project1   # or any other project folder
+npm install
+npm run dev
+```
+
+Open the local URL shown in the terminal (usually `http://localhost:5173`).
+
+**Requirements:** [Node.js](https://nodejs.org/) 18 or newer and npm.
+
+## Repository Structure
+
+```
+React_Projects/
+├── project1/      # Personal Portfolio (basic)
+│   └── README.md
+├── ...            # more projects coming
+└── README.md      # this file
+```
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- CSS
+
+## Author
+
+**Ali Hassan**
+GitHub: [@ali-hassan-january2004](https://github.com/ali-hassan-january2004)
