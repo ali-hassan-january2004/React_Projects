@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px;
+}
+
+.icon {
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  border-radius: 14px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value {
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
