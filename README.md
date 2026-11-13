@@ -7,6 +7,7 @@ A collection of React projects I build while learning, from the basics to advanc
 | # | Project | What it covers | Level | Status |
 |---|---------|----------------|-------|--------|
 | 1 | [Personal Portfolio](./project1) | JSX, functional components, fragments, props, click events, Vite + TypeScript | Basic | Done |
+| 2 | [ShopEase Product Catalog](./project2) | Props, typing props with TypeScript, optional/default props, `children`, component composition, reusable components (Button, Badge, Card), function props, CSS Modules, responsive grid | Basic | Done |
 
 More projects will be added to this table as I finish them.
 
@@ -16,6 +17,7 @@ The plan is to move through React step by step. Topics are added to projects as 
 
 **Basic**
 - JSX, components and props
+- Props, composition and reusable components
 - Events and conditional rendering
 - Lists and keys
 - State with `useState`
@@ -41,7 +43,7 @@ Each project is a separate app. To run one:
 
 ```bash
 git clone https://github.com/ali-hassan-january2004/React_Projects.git
-cd React_Projects/project1   # or any other project folder
+cd React_Projects/project2   # or any other project folder
 npm install
 npm run dev
 ```
@@ -56,6 +58,8 @@ Open the local URL shown in the terminal (usually `http://localhost:5173`).
 React_Projects/
 ├── project1/      # Personal Portfolio (basic)
 │   └── README.md
+├── project2/      # ShopEase Product Catalog (basic)
+│   └── README.md
 ├── ...            # more projects coming
 └── README.md      # this file
 ```
@@ -65,7 +69,7 @@ React_Projects/
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
-- CSS
+- CSS and CSS Modules
 
 ## Author
 
