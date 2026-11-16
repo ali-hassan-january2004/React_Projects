@@ -8,6 +8,7 @@ A collection of React projects I build while learning, from the basics to advanc
 |---|---------|----------------|-------|--------|
 | 1 | [Personal Portfolio](./project1) | JSX, functional components, fragments, props, click events, Vite + TypeScript | Basic | Done |
 | 2 | [ShopEase Product Catalog](./project2) | Props, typing props with TypeScript, optional/default props, `children`, component composition, reusable components (Button, Badge, Card), function props, CSS Modules, responsive grid | Basic | Done |
+| 3 | [React State Quiz](./project3) | `useState`, re-rendering, click events, updating arrays without mutation, functional state updates, conditional rendering (`&&`, ternary, early return), derived values, Rules of Hooks, typing state and events, score screen and restart | Basic | In progress |
 
 More projects will be added to this table as I finish them.
 
@@ -18,9 +19,9 @@ The plan is to move through React step by step. Topics are added to projects as 
 **Basic**
 - JSX, components and props
 - Props, composition and reusable components
+- State with `useState`
 - Events and conditional rendering
 - Lists and keys
-- State with `useState`
 - Forms and controlled inputs
 
 **Intermediate**
@@ -43,7 +44,7 @@ Each project is a separate app. To run one:
 
 ```bash
 git clone https://github.com/ali-hassan-january2004/React_Projects.git
-cd React_Projects/project2   # or any other project folder
+cd React_Projects/project3   # or any other project folder
 npm install
 npm run dev
 ```
@@ -59,6 +60,8 @@ React_Projects/
 ├── project1/      # Personal Portfolio (basic)
 │   └── README.md
 ├── project2/      # ShopEase Product Catalog (basic)
+│   └── README.md
+├── project3/      # React State Quiz (basic)
 │   └── README.md
 ├── ...            # more projects coming
 └── README.md      # this file
