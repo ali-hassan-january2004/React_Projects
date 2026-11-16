@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 4px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kicker {
+  color: #9598ab;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.label span {
+  color: var(--ink);
+}
+
+.track {
+  height: 9px;
+  padding: 2px;
+  background: #e5e5f1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b7df5, var(--accent));
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(101, 88, 232, 0.35);
+  transition: width 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}

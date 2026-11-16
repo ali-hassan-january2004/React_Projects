@@ -1,0 +1,63 @@
+.option {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  min-height: 60px;
+  padding: 13px 15px;
+  text-align: left;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  font-weight: 550;
+  transition: border-color 0.18s, background 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+
+.letter {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #f0effa;
+  color: #7771ba;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.idle:hover {
+  border-color: var(--accent);
+  background: #fbfaff;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 16px rgba(74, 67, 151, 0.08);
+}
+
+.correct {
+  border-color: var(--correct);
+  background: var(--correct-bg);
+}
+
+.correct .letter {
+  background: var(--correct);
+  color: #fff;
+}
+
+.wrong {
+  border-color: var(--wrong);
+  background: var(--wrong-bg);
+}
+
+.wrong .letter {
+  background: var(--wrong);
+  color: #fff;
+}
+
+.dimmed {
+  opacity: 0.48;
+}
+
+.option:disabled {
+  cursor: default;
+}
