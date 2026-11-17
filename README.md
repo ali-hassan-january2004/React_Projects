@@ -8,7 +8,7 @@ A collection of React projects I build while learning, from the basics to advanc
 |---|---------|----------------|-------|--------|
 | 1 | [Personal Portfolio](./project1) | JSX, functional components, fragments, props, click events, Vite + TypeScript | Basic | Done |
 | 2 | [ShopEase Product Catalog](./project2) | Props, typing props with TypeScript, optional/default props, `children`, component composition, reusable components (Button, Badge, Card), function props, CSS Modules, responsive grid | Basic | Done |
-| 3 | [React State Quiz](./project3) | `useState`, re-rendering, events, updating state without mutation, conditional rendering, score screen and restart | Basic | Done |
+| 3 | [React State Quiz](./project3) | `useState`, re-rendering, click events, updating arrays without mutation, functional state updates, conditional rendering (`&&`, ternary, early return), derived values, Rules of Hooks, typing state and events, score screen and restart | Basic | In progress |
 | 4 | [Student Registration App](./project4) | Rendering lists and keys, controlled and uncontrolled components, form handling, validation, lifting state up, search and filter, Tailwind CSS | Basic | Done |
 
 More projects will be added to this table as I finish them.
