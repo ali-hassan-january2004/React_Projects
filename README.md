@@ -1,84 +1,78 @@
-# React Projects
+# ⚛️ React Projects
 
-A collection of React projects I build while learning, from the basics to advanced topics. Each project lives in its own folder with its own README, so you can open one, run it, and see what it covers.
+A collection of React projects I'm building while learning React step by step, from the basics to advanced concepts. Each project has its own folder and README, and each one applies the concepts from that day of my course.
 
-## Projects
+All projects use **React + TypeScript + Vite**.
 
-| # | Project | What it covers | Level | Status |
-|---|---------|----------------|-------|--------|
-| 1 | [Personal Portfolio](./project1) | JSX, functional components, fragments, props, click events, Vite + TypeScript | Basic | Done |
-| 2 | [ShopEase Product Catalog](./project2) | Props, typing props with TypeScript, optional/default props, `children`, component composition, reusable components (Button, Badge, Card), function props, CSS Modules, responsive grid | Basic | Done |
-| 3 | [React State Quiz](./project3) | `useState`, re-rendering, click events, updating arrays without mutation, functional state updates, conditional rendering (`&&`, ternary, early return), derived values, Rules of Hooks, typing state and events, score screen and restart | Basic | In progress |
-| 4 | [Student Registration App](./project4) | Rendering lists and keys, controlled and uncontrolled components, form handling, validation, lifting state up, search and filter, Tailwind CSS | Basic | Done |
+---
 
-More projects will be added to this table as I finish them.
+## 📚 Projects
 
-## Learning Path
+| # | Project | Description | Key Concepts | Status |
+|---|---------|-------------|--------------|--------|
+| 1 | [Personal Portfolio](./project1) | Portfolio with navbar, hero, skills and footer | JSX, components, Fragments, `{ }` in JSX, click events | ✅ Done |
+| 2 | [ShopEase Product Catalog](./project2) | Static product catalog with reusable product cards | Props, typed props, children, composition, CSS Modules, responsive grid | ✅ Done |
+| 3 | [React State Quiz](./project3) | Quiz app with score screen and restart button | `useState`, events, conditional rendering, derived values | ✅ Done |
+| 4 | [Student Registration App](./project4) | Registration form with validation and a student table | Lists, keys, controlled components, forms, lifting state up, search/filter, Tailwind CSS | ✅ Done |
+| 5 | [Expense Tracker](./project5) | Expense tracker with budget alerts, debounced search and saved data | `useEffect`, dependency arrays, cleanup, `useRef`, `localStorage`, custom hooks | ✅ Done |
 
-The plan is to move through React step by step. Topics are added to projects as I learn them.
+---
 
-**Basic**
-- JSX, components and props
-- Props, composition and reusable components
-- State with `useState`
-- Events and conditional rendering
-- Lists and keys
-- Forms, controlled inputs and validation
-- Lifting state up
+## 🗺️ Learning Path
 
-**Intermediate**
-- `useEffect` and fetching data from APIs
-- Component composition patterns
-- React Router and multi-page apps
-- Context API for shared state
-- Custom hooks
+1. **React Basics:** what React is, SPA, Vite + TypeScript setup
+2. **JSX & Components:** functional components, Fragments, `{ }` in JSX
+3. **Props & Composition:** typed props, default props, children, reusable components
+4. **State with `useState`:** re-rendering, updating arrays/objects without mutation
+5. **Events & Conditional Rendering:** click/change/submit/key events, `&&`, ternary, early return
+6. **Lists, Forms & Lifting State Up:** keys, controlled components, validation, search/filter
+7. **Side Effects & Hooks:** `useEffect`, cleanup, `useRef`, `localStorage`, debouncing ✅
+8. **Coming next:** `useContext`, `useReducer`, custom hooks in depth, React Router, API calls
 
-**Advanced**
-- Global state management
-- Performance optimization (`memo`, `useMemo`, `useCallback`)
-- Authentication and protected routes
-- Testing components
-- Deployment
+---
 
-## Getting Started
+## 🛠️ Tech Stack
 
-Each project is a separate app. To run one:
+- React
+- TypeScript
+- Vite
+- CSS / CSS Modules / Tailwind CSS (depending on the project)
+
+---
+
+## 🚀 Running Any Project
 
 ```bash
+# 1. Clone the repo
 git clone https://github.com/ali-hassan-january2004/React_Projects.git
-cd React_Projects/project4   # or any other project folder
+
+# 2. Go into a project folder
+cd React_Projects/project5
+
+# 3. Install and run
 npm install
 npm run dev
 ```
 
-Open the local URL shown in the terminal (usually `http://localhost:5173`).
+---
 
-**Requirements:** [Node.js](https://nodejs.org/) 18 or newer and npm.
-
-## Repository Structure
+## 📁 Repository Structure
 
 ```
 React_Projects/
-├── project1/      # Personal Portfolio (basic)
-│   └── README.md
-├── project2/      # ShopEase Product Catalog (basic)
-│   └── README.md
-├── project3/      # React State Quiz (basic)
-│   └── README.md
-├── project4/      # Student Registration App (basic)
-│   └── README.md
-├── ...            # more projects coming
-└── README.md      # this file
+├── project1/                  # Personal Portfolio
+├── project2/                  # ShopEase Product Catalog
+├── project3/                  # React State Quiz
+├── project4/                  # Student Registration App
+├── project5/                  # Expense Tracker
+└── README.md
 ```
 
-## Tech Stack
+---
 
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- CSS, CSS Modules and [Tailwind CSS](https://tailwindcss.com/)
-
-## Author
+## 👤 Author
 
 **Ali Hassan**
 GitHub: [@ali-hassan-january2004](https://github.com/ali-hassan-january2004)
+
+⭐ If you find this useful, consider starring the repo!

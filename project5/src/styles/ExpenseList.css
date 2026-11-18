@@ -1,0 +1,138 @@
+.expense-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  min-height: 72px;
+  padding: 12px 14px;
+  border: 1px solid #e8eeea;
+  border-radius: 12px;
+  box-shadow: 0 5px 16px rgba(33, 65, 51, 0.04);
+}
+
+.category-mark {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #edf4f0;
+  color: #3c765d;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+.category-shopping { background: #f8efdf; color: #9b7031; }
+.category-bills { background: #eceaf7; color: #69619a; }
+.category-entertainment { background: #f6e8ec; color: #9b6574; }
+.category-transport { background: #e5eff6; color: #557f9a; }
+.category-other { background: #edf0ed; color: #69756f; }
+
+.expense-info {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.expense-info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7b9188;
+  font-size: 0.78rem;
+}
+
+.tag {
+  font-style: normal;
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.expense-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.expense-amount {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.delete-btn {
+  border: none;
+  background: #fee2e2;
+  color: #b91c1c;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+}
+
+.empty {
+  text-align: center;
+  color: #64748b;
+  margin-top: 12px;
+  padding: 44px 20px;
+  border: 1px dashed #dce6e0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.empty > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #edf4f0;
+  color: #6f9181;
+  font-size: 1.35rem;
+}
+
+.empty h3 {
+  color: #3e5048;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.empty p {
+  font-size: 0.82rem;
+}
+
+@media (max-width: 560px) {
+  .expense-item {
+    align-items: flex-start;
+  }
+
+  .expense-right {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 6px;
+  }
+
+  .expense-info span {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+}
