@@ -15,6 +15,7 @@ All projects use **React + TypeScript + Vite**.
 | 3 | [React State Quiz](./project3) | Quiz app with score screen and restart button | `useState`, events, conditional rendering, derived values | ✅ Done |
 | 4 | [Student Registration App](./project4) | Registration form with validation and a student table | Lists, keys, controlled components, forms, lifting state up, search/filter, Tailwind CSS | ✅ Done |
 | 5 | [Expense Tracker](./project5) | Expense tracker with budget alerts, debounced search and saved data | `useEffect`, dependency arrays, cleanup, `useRef`, `localStorage`, custom hooks | ✅ Done |
+| 6 | [ShopAdmin Dashboard](./project6) | Multi-page admin dashboard with login, sidebar, list/detail pages and settings tabs | React Router, `NavLink`, `useParams`, nested routes + `Outlet`, protected routes, 404 page, `useSearchParams`, Context API | ✅ Done |
 
 ---
 
@@ -27,7 +28,8 @@ All projects use **React + TypeScript + Vite**.
 5. **Events & Conditional Rendering:** click/change/submit/key events, `&&`, ternary, early return
 6. **Lists, Forms & Lifting State Up:** keys, controlled components, validation, search/filter
 7. **Side Effects & Hooks:** `useEffect`, cleanup, `useRef`, `localStorage`, debouncing ✅
-8. **Coming next:** `useContext`, `useReducer`, custom hooks in depth, React Router, API calls
+8. **Routing with React Router:** `BrowserRouter`, `Routes`, `Link`/`NavLink`, `useNavigate`, `useParams`, nested routes, protected routes, URL filters ✅
+9. **Coming next:** `useReducer`, custom hooks in depth, API calls, performance optimization
 
 ---
 
@@ -36,6 +38,7 @@ All projects use **React + TypeScript + Vite**.
 - React
 - TypeScript
 - Vite
+- React Router (project 6)
 - CSS / CSS Modules / Tailwind CSS (depending on the project)
 
 ---
@@ -47,7 +50,7 @@ All projects use **React + TypeScript + Vite**.
 git clone https://github.com/ali-hassan-january2004/React_Projects.git
 
 # 2. Go into a project folder
-cd React_Projects/project5
+cd React_Projects/project6
 
 # 3. Install and run
 npm install
@@ -65,6 +68,7 @@ React_Projects/
 ├── project3/                  # React State Quiz
 ├── project4/                  # Student Registration App
 ├── project5/                  # Expense Tracker
+├── project6/                  # ShopAdmin Multi-Page Dashboard
 └── README.md
 ```
 
