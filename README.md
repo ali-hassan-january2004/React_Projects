@@ -1,80 +1,72 @@
-# ⚛️ React Projects
+# React Projects
 
-A collection of React projects I'm building while learning React step by step, from the basics to advanced concepts. Each project has its own folder and README, and each one applies the concepts from that day of my course.
+A collection of React projects built while learning React step by step, from the basics to more advanced topics. Each project lives in its own folder and focuses on a specific set of concepts.
 
-All projects use **React + TypeScript + Vite**.
+## Projects
 
----
+| # | Project | Folder | Key Concepts |
+|---|---|---|---|
+| 1 | Personal Portfolio | [project1](./project1) | JSX, functional components, splitting UI into components, Fragments |
+| 2 | ShopEase Product Catalog | [project2](./project2) | Props, TypeScript props, children, composition, reusable components, CSS Modules |
+| 3 | React State Quiz | [project3](./project3) | `useState`, events, conditional rendering, immutable updates, derived values |
+| 4 | Student Registration App | [project4](./project4) | Lists and keys, controlled forms, validation, lifting state up, search/filter, Tailwind CSS |
+| 5 | Expense Tracker | [project5](./project5) | `useEffect`, cleanup, `useRef`, localStorage, debounced search |
+| 6 | Multi-Page Admin Dashboard | [project6](./project6) | React Router, nested routes, protected routes, `useParams`, `useSearchParams`, auth context |
+| 7 | Product Inventory Dashboard | [project7](./project7) | REST API, Fetch, CRUD, loading/error/empty states, retry, pagination, `AbortController` |
 
-## 📚 Projects
+## Learning Path
 
-| # | Project | Description | Key Concepts | Status |
-|---|---------|-------------|--------------|--------|
-| 1 | [Personal Portfolio](./project1) | Portfolio with navbar, hero, skills and footer | JSX, components, Fragments, `{ }` in JSX, click events | ✅ Done |
-| 2 | [ShopEase Product Catalog](./project2) | Static product catalog with reusable product cards | Props, typed props, children, composition, CSS Modules, responsive grid | ✅ Done |
-| 3 | [React State Quiz](./project3) | Quiz app with score screen and restart button | `useState`, events, conditional rendering, derived values | ✅ Done |
-| 4 | [Student Registration App](./project4) | Registration form with validation and a student table | Lists, keys, controlled components, forms, lifting state up, search/filter, Tailwind CSS | ✅ Done |
-| 5 | [Expense Tracker](./project5) | Expense tracker with budget alerts, debounced search and saved data | `useEffect`, dependency arrays, cleanup, `useRef`, `localStorage`, custom hooks | ✅ Done |
-| 6 | [ShopAdmin Dashboard](./project6) | Multi-page admin dashboard with login, sidebar, list/detail pages and settings tabs | React Router, `NavLink`, `useParams`, nested routes + `Outlet`, protected routes, 404 page, `useSearchParams`, Context API | ✅ Done |
+1. **Foundations**: React intro, SPAs, Vite + TypeScript, JSX, components
+2. **Props and composition**: typed props, children, reusable components
+3. **State with `useState`**: re-rendering, immutable updates, derived values
+4. **Events and conditional rendering**
+5. **Lists, keys and forms**: controlled inputs, validation, lifting state up
+6. **Side effects**: `useEffect`, cleanup, `useRef`, localStorage
+7. **Routing**: React Router, nested and protected routes
+8. **Data fetching**: REST APIs, async/await, CRUD, request cancellation
 
----
+## Tech Stack
 
-## 🗺️ Learning Path
-
-1. **React Basics:** what React is, SPA, Vite + TypeScript setup
-2. **JSX & Components:** functional components, Fragments, `{ }` in JSX
-3. **Props & Composition:** typed props, default props, children, reusable components
-4. **State with `useState`:** re-rendering, updating arrays/objects without mutation
-5. **Events & Conditional Rendering:** click/change/submit/key events, `&&`, ternary, early return
-6. **Lists, Forms & Lifting State Up:** keys, controlled components, validation, search/filter
-7. **Side Effects & Hooks:** `useEffect`, cleanup, `useRef`, `localStorage`, debouncing ✅
-8. **Routing with React Router:** `BrowserRouter`, `Routes`, `Link`/`NavLink`, `useNavigate`, `useParams`, nested routes, protected routes, URL filters ✅
-9. **Coming next:** `useReducer`, custom hooks in depth, API calls, performance optimization
-
----
-
-## 🛠️ Tech Stack
-
-- React
-- TypeScript
+- React + TypeScript
 - Vite
+- Tailwind CSS (from project 4 onward), CSS Modules (earlier projects)
 - React Router (project 6)
-- CSS / CSS Modules / Tailwind CSS (depending on the project)
+- Fetch API with DummyJSON (project 7)
 
----
+## Running a Project
 
-## 🚀 Running Any Project
+Every project is an independent Vite app.
 
 ```bash
-# 1. Clone the repo
+# clone the repo
 git clone https://github.com/ali-hassan-january2004/React_Projects.git
+cd React_Projects
 
-# 2. Go into a project folder
-cd React_Projects/project6
+# pick a project
+cd project7
 
-# 3. Install and run
+# install and run
 npm install
 npm run dev
 ```
 
----
+Some projects need an `.env` file. Check the README inside each project folder.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 React_Projects/
-├── project1/                  # Personal Portfolio
-├── project2/                  # ShopEase Product Catalog
-├── project3/                  # React State Quiz
-├── project4/                  # Student Registration App
-├── project5/                  # Expense Tracker
-├── project6/                  # ShopAdmin Multi-Page Dashboard
-└── README.md
+├── README.md
+├── project1/
+├── project2/
+├── project3/
+├── project4/
+├── project5/
+├── project6/
+└── project7/
 ```
 
----
-
-## 👤 Author
+## Author
 
 **Ali Hassan**
 GitHub: [@ali-hassan-january2004](https://github.com/ali-hassan-january2004)
